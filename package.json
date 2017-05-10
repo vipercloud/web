@@ -2,10 +2,11 @@
   "name": "viper.cloud-web",
   "version": "0.1.0",
   "description": "Primary client site for viper.cloud",
-  "main": "dist/index.js",
+  "main": "dist/app/index.js",
   "scripts": {
     "test": "mocha dist/test/*.js",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/app/index.js"
   },
   "repository": {
     "type": "git",
