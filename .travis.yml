@@ -17,6 +17,7 @@ script:
   - npm run build
   - npm test
   - npm prune --production
+  - echo $TRAVIS_BUILD_NUMBER
   - docker build -t vipercloud/web:latest -t vipercloud/web:$TRAVIS_BUILD_NUMBER .
   - docker images
 
