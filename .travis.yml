@@ -18,6 +18,7 @@ script:
   - npm test
   - npm prune --production
   - docker build -t vipercloud/web:latest -t vipercloud/web:$TRAVIS_BUILD_NUMBER .
+  - docker images
 
 #after_success:
 #  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
