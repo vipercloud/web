@@ -1,6 +1,7 @@
 FROM node:7-alpine
 
-RUN apk add curl
+RUN apk add --update curl && \
+    rm -rf /var/cache/apk/*
 
 WORKDIR /app
 COPY package.json .
